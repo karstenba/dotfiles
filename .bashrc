@@ -60,3 +60,5 @@ if [ "$color_prompt" = yes ]; then
   PS1='\[\e[0;33m\]\w\[\e[m\]|\[\e[0;32m\]$(__git_ps1 "%s")\[\e[m\]$ '
 fi
 unset color_prompt
+
+eval $(keychain --eval --quiet --noask)
