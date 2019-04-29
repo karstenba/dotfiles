@@ -1,0 +1,7 @@
+[user]
+	name = Karsten
+	email = karsten@cliqz.com
+[core]
+	editor = vim
+[alias]
+	unstage = reset HEAD --
