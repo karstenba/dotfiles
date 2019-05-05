@@ -28,9 +28,9 @@ set -o noclobber
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 [ -f ~/.bash_git ] && source ~/.bash_git
 
-export FZF_DEFAULT_COMMAND="fd . $HOME"
+export FZF_DEFAULT_COMMAND="fd -H . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd -t d . $HOME"
+export FZF_ALT_C_COMMAND="fd -t d -H -E '.git' . $HOME"
 
 export GOPATH="/home/karsten/go"
 export PATH="$PATH:$(yarn global bin):$GOPATH/bin:/usr/local/go/bin"
