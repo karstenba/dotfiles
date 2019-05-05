@@ -48,6 +48,10 @@ export NVM_DIR="$HOME/.nvm"
 # Source GIT bash completion
 [ -f /usr/share/git/completion/git-completion.bash ] && source /usr/share/git/completion/git-completion.bash
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+      . /usr/share/bash-completion/bash_completion
+
 __git_complete gco _git_checkout
 __git_complete gb _git_checkout
 __git_complete ga _git_add
