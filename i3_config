@@ -176,5 +176,6 @@ bindsym $mod+Escape exec i3lock -c 333333
 bind 232 exec xbacklight -dec 10
 bind 233 exec xbacklight -inc 10
 
+bind 121 exec amixer sset Master toggle
 bind 122 exec amixer sset Master 5%-
 bind 123 exec amixer sset Master 5%+
