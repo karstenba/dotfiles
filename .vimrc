@@ -74,6 +74,9 @@ endif
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+" In addition to FZF above VIM specifics
+" see https://github.com/junegunn/fzf.vim
+Plug 'junegunn/fzf.vim'
 
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
@@ -125,12 +128,11 @@ endfunction
 " Status bar
 "set laststatus=2
 
-"Ctrl-P to invoke GFile
-nnoremap <C-P> :GFile<CR>
+nnoremap <C-P> :GFiles<CR>
 
 " Vim's auto indentation feature does not work properly with text copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
 nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-O>:set invpaste paste?<CR>
+imap <F2> <C-O> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 nnoremap <C-J> <C-W><C-J>
