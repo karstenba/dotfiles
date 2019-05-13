@@ -91,7 +91,7 @@ Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 " Turn on after plugins initialized
-filetype on
+filetype plugin on
 
 " autocmd FileType [filetype] setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab textwidth=0 (defaults to 0)
 au FileType python setl sw=4 ts=4 sts=0 et
