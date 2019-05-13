@@ -58,11 +58,6 @@ set viminfo='100,<9999,s100
 "autocmd BufWinLeave *.* mkview
 "autocmd BufWinEnter *.* silent loadview"
 
- " Call the .vimrc.plug file
-" if filereadable(expand("~/.vimrc.plug"))
-"     source ~/.vimrc.plug
-" endif
-
 " Turn off errorbell and visualbell
 set noeb vb t_vb=
 
