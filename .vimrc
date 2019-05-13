@@ -83,6 +83,7 @@ Plug 'hdima/python-syntax'
 Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 
 Plug 'w0rp/ale'
+Plug 'python/black'
 Plug 'itchyny/lightline.vim'
 
 Plug 'altercation/vim-colors-solarized'
