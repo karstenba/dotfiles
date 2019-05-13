@@ -1,5 +1,6 @@
 xterm*faceName: hack-15
 xterm*metaSendsEscape: true
+Xcursor.size: 16
 xterm*termName: xterm-256color
 *VT100*color0: #EDEDED
 *VT100*color1: #D7005F
