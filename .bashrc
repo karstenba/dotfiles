@@ -53,6 +53,7 @@ export NVM_DIR="$HOME/.nvm"
       . /usr/share/bash-completion/bash_completion
 
 __git_complete gco _git_checkout
+__git_complete gc _git_commit
 __git_complete gb _git_checkout
 __git_complete ga _git_add
 
