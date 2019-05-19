@@ -20,3 +20,4 @@ xterm*termName: xterm-256color
 *VT100*color15: #F5F5F5
 xterm*background: #EEEEEE
 xterm*foreground: #4D4D4C
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
