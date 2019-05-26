@@ -1,0 +1,7 @@
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa
+Host karstenba.github.com
+    HostName github.com
+    IdentityFile ~/.ssh/karstenba_github
+AddKeysToAgent yes
