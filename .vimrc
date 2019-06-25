@@ -81,6 +81,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'hdima/python-syntax'
 Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
+Plug 'Valloric/YouCompleteMe'
 
 Plug 'w0rp/ale'
 Plug 'python/black'
@@ -92,6 +93,9 @@ call plug#end()
 
 " Turn on after plugins initialized
 filetype plugin on
+
+" Don't show docs while autocompleting
+set completeopt-=preview
 
 " autocmd FileType [filetype] setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab textwidth=0 (defaults to 0)
 au FileType python setl sw=4 ts=4 sts=0 et
@@ -123,6 +127,10 @@ endfunction
 
 " Status bar
 "set laststatus=2
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 nnoremap <C-P> :GFiles<CR>
 
