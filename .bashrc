@@ -67,4 +67,4 @@ if [ "$color_prompt" = yes ]; then
 fi
 unset color_prompt
 
-eval $(keychain --eval --quiet --noask)
+eval $(keychain --eval --nogui --quiet)
