@@ -32,8 +32,9 @@ export FZF_DEFAULT_COMMAND="fd -H . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d -H -E '.git' . $HOME"
 
+PYTHON_USER_SITE="/home/karsten/.local/bin/"
 export GOPATH="/home/karsten/go"
-export PATH="$PATH:$(yarn global bin):$GOPATH/bin"
+export PATH="$PATH:$(yarn global bin):$GOPATH/bin:$PYTHON_USER_SITE"
 export EDITOR=/usr/local/bin/vim
 export VISUAL="$EDITOR"
 export NVM_DIR="$HOME/.nvm"
