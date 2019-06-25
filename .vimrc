@@ -17,23 +17,9 @@ set splitright
 set exrc
 set secure
 
-" Display options
-"set showmode
-"set showcmd
-
-" Highlight matching pairs of brackets. Use the '%' character to jump between them.
-"set matchpairs+=<:>
-
-" Display different types of white spaces.
-"set list
-"set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
-
 " Show line numbers
 set number
 set relativenumber
-
-" Set status line display
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
 
 " Encoding
 set encoding=utf-8
@@ -49,14 +35,6 @@ set smartcase
 
 " Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
-
-" Map the <Space> key to toggle a selected fold opened/closed.
-"nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-"vnoremap <Space> zf
-
-" Automatically save and load folds
-"autocmd BufWinLeave *.* mkview
-"autocmd BufWinEnter *.* silent loadview"
 
 " Turn off errorbell and visualbell
 set noeb vb t_vb=
@@ -125,8 +103,6 @@ function! LightlineFilename()
 	return expand('%')
 endfunction
 
-" Status bar
-"set laststatus=2
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
