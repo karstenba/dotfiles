@@ -7,6 +7,7 @@ alias vi='vim'
 alias ff='firefox --no-remote --ProfileManager'
 alias tf='terraform'
 alias r='ranger'
+alias pm='pulsemixer'
 alias ...='../..'
 alias ....='../../..'
 
