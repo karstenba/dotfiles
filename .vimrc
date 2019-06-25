@@ -58,6 +58,7 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'hdima/python-syntax'
+Plug 'posva/vim-vue'
 Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'Valloric/YouCompleteMe'
 
@@ -88,6 +89,11 @@ set sts=0
 set et
 
 syntax on
+
+" Fix vue syntax highlighting to randomly break
+autocmd FileType vue syntax sync fromstart
+" Fix vim slowing down on vue files
+let g:vue_disable_pre_processors=1
 
 " Lightline config
 " Don't show mode on bottom as lightline already shows it
