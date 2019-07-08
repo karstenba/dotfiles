@@ -3,79 +3,22 @@ XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT
 xterm*faceName: hack-15
 xterm*metaSendsEscape: true
 xterm*termName: xterm-256color
-# Papercolor scheme
-#*VT100*color0: #EDEDED
-#*VT100*color1: #D7005F
-#*VT100*color2: #718C00
-#*VT100*color3: #D75F00
-#*VT100*color4: #4271AE
-#*VT100*color5: #8959A8
-#*VT100*color6: #3E999F
-#*VT100*color7: #4D4D4C
-#*VT100*color8: #969694
-#*VT100*color9: #D7005F
-#*VT100*color10: #718C00
-#*VT100*color11: #D75F00
-#*VT100*color12: #4271AE
-#*VT100*color13: #8959A8
-#*VT100*color14: #3E999F
-#*VT100*color15: #F5F5F5
-#xterm*background: #EEEEEE
-#xterm*foreground: #4D4D4C
-
-#Solarized theme
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #eee8d5
-#define S_base3         #fdf6e3
-
-*background:            S_base03
-*foreground:            S_base0
-*fadeColor:             S_base03
-*cursorColor:           S_base1
-*pointerColorBackground:S_base01
-*pointerColorForeground:S_base1
-
-#define S_yellow        #b58900
-#define S_orange        #cb4b16
-#define S_red           #dc322f
-#define S_magenta       #d33682
-#define S_violet        #6c71c4
-#define S_blue          #268bd2
-#define S_cyan          #2aa198
-#define S_green #859900
-!! black dark/light
-*VT100*color0: S_base02
-*VT100*color8: S_base03
-
-!! red dark/light
-*VT100*color1: S_red
-*VT100*color9: S_orange
-
-!! green dark/light
-*VT100*color2: S_green
-*VT100*color10: S_base01
-
-!! yellow dark/light
-*VT100*color3: S_yellow
-*VT100*color11: S_base00
-
-!! blue dark/light
-*VT100*color4: S_blue
-*VT100*color12: S_base0
-
-!! magenta dark/light
-*VT100*color5: S_magenta
-*VT100*color13: S_violet
-
-!! cyan dark/light
-*VT100*color6: S_cyan
-*VT100*color14: S_base1
-
-!! white dark/light
-*VT100*color7: S_base2
-*VT100*color15: S_base3
+! Papercolor scheme
+*VT100*color0: #EDEDED
+*VT100*color1: #D7005F
+*VT100*color2: #718C00
+*VT100*color3: #D75F00
+*VT100*color4: #4271AE
+*VT100*color5: #8959A8
+*VT100*color6: #3E999F
+*VT100*color7: #4D4D4C
+*VT100*color8: #969694
+*VT100*color9: #D7005F
+*VT100*color10: #718C00
+*VT100*color11: #D75F00
+*VT100*color12: #4271AE
+*VT100*color13: #8959A8
+*VT100*color14: #3E999F
+*VT100*color15: #F5F5F5
+xterm*background: #EEEEEE
+xterm*foreground: #4D4D4C
