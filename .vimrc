@@ -99,14 +99,14 @@ let g:vue_disable_pre_processors=1
 " Don't show mode on bottom as lightline already shows it
 set noshowmode
 let g:lightline = {
-	\ 'colorscheme': 'PaperColor',
-	\ 'component_function': {
-	\	'filename': 'LightlineFilename'
-	\ }
-	\ }
+  \ 'colorscheme': 'PaperColor',
+  \ 'component_function': {
+  \ 'filename': 'LightlineFilename'
+  \ }
+  \ }
 
 function! LightlineFilename()
-	return expand('%')
+  return expand('%')
 endfunction
 
 let g:syntastic_always_populate_loc_list = 1
