@@ -39,16 +39,9 @@ set viminfo='100,<9999,s100
 " Turn off errorbell and visualbell
 set noeb vb t_vb=
 
-" Source FZF installed via pacman
-if filereadable(expand("/usr/share/vim/vimfiles/plugin/fzf.vim"))
-  source /usr/share/vim/vimfiles/plugin/fzf.vim
-endif
-
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-" In addition to FZF above VIM specifics
-" see https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf.vim'
 
 Plug 'pangloss/vim-javascript'
