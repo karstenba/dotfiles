@@ -56,7 +56,7 @@ Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'Valloric/YouCompleteMe'
 
 Plug 'w0rp/ale'
-Plug 'python/black'
+Plug 'psf/black'
 Plug 'itchyny/lightline.vim'
 
 Plug 'altercation/vim-colors-solarized'
