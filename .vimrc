@@ -60,7 +60,6 @@ Plug 'psf/black'
 Plug 'itchyny/lightline.vim'
 
 Plug 'altercation/vim-colors-solarized'
-Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 " Turn on after plugins initialized
@@ -92,7 +91,6 @@ let g:vue_disable_pre_processors=1
 " Don't show mode on bottom as lightline already shows it
 set noshowmode
 let g:lightline = {
-  \ 'colorscheme': 'PaperColor',
   \ 'component_function': {
   \ 'filename': 'LightlineFilename'
   \ }
@@ -119,5 +117,5 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme solarized
