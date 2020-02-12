@@ -43,27 +43,29 @@ set noeb vb t_vb=
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
-
-Plug 'pangloss/vim-javascript'
-Plug 'elzr/vim-json'
-Plug 'fatih/vim-go'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'leafgarland/typescript-vim'
-Plug 'plasticboy/vim-markdown'
-Plug 'hdima/python-syntax'
-Plug 'posva/vim-vue'
-Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'Valloric/YouCompleteMe'
-
-Plug 'w0rp/ale'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'dense-analysis/ale'
 Plug 'psf/black'
 Plug 'itchyny/lightline.vim'
-
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Turn on after plugins initialized
 filetype plugin on
+
+" ALE settings
+let g:ale_fix_on_save = 1
+let g:ale_linters_explicit = 1
+let g:ale_python_pylint_options = '--rcfile ~/.pylintrc'
+let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \ 'python': ['pylint']
+  \ }
+let g:ale_fixers = {
+  \ 'javascript': ['prettier', 'eslint'],
+  \ 'python': ['autopep8', 'black']
+  \ }
 
 " Don't show docs while autocompleting
 set completeopt-=preview
@@ -82,11 +84,6 @@ set et
 
 syntax on
 
-" Fix vue syntax highlighting to randomly break
-autocmd FileType vue syntax sync fromstart
-" Fix vim slowing down on vue files
-let g:vue_disable_pre_processors=1
-
 " Lightline config
 " Don't show mode on bottom as lightline already shows it
 set noshowmode
@@ -99,11 +96,6 @@ let g:lightline = {
 function! LightlineFilename()
   return expand('%')
 endfunction
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 nnoremap <C-P> :GFiles<CR>
 
