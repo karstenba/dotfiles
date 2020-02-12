@@ -1,0 +1,10 @@
+[MASTER]
+disable=
+    missing-module-docstring,
+    import-error,
+    wrong-import-order,
+    wrong-import-position,
+    invalid-name,
+    too-few-public-methods,
+    missing-class-docstring,
+    missing-function-docstring
