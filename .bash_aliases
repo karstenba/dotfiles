@@ -19,6 +19,7 @@ alias gb='git branch'
 alias gco='git checkout'
 alias ga='git add'
 alias gc='git commit'
+alias grb='git rebase'
 alias glog='git log --oneline'
 
 alias vpn-us='sudo openvpn ~/vpn/mullvad_us.conf'
