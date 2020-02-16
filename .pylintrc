@@ -7,4 +7,7 @@ disable=
     invalid-name,
     too-few-public-methods,
     missing-class-docstring,
-    missing-function-docstring
+    missing-function-docstring,
+    bad-continuation
+
+max-line-length=88
