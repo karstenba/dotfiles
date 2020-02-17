@@ -1,8 +1,9 @@
-Xcursor.size: 16
-XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
-xterm*faceName: hack-15
-xterm*metaSendsEscape: true
+xterm*faceName: hack-14
 xterm*termName: xterm-256color
+xterm*metaSendsEscape: true
+xterm*selectToClipboard: true
+
+#define SOLARIZED_DARK
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
