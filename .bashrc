@@ -48,6 +48,7 @@ source /home/karsten/.local/bin/virtualenvwrapper.sh
 
 # Source FZF bash completion
 [ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
 
 # Source GIT bash completion
 [ -f /usr/share/git/completion/git-completion.bash ] && source /usr/share/git/completion/git-completion.bash
