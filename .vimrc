@@ -111,3 +111,7 @@ nnoremap <C-H> <C-W><C-H>
 
 set background=dark
 colorscheme solarized
+
+" Fix xterm modifyOtherKeys issues, see https://github.com/junegunn/fzf.vim/issues/900
+let &t_TI = ""
+let &t_TE = ""
