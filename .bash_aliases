@@ -22,6 +22,7 @@ alias gc='git commit'
 alias grb='git rebase'
 alias glog='git log --oneline'
 alias gf='git fetch'
+alias gp='git push'
 
 alias vpn-us='sudo openvpn ~/vpn/mullvad_us.conf'
 alias vpn-hu='sudo openvpn ~/vpn/mullvad_hu.conf'
