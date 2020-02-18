@@ -62,6 +62,7 @@ __git_complete gc _git_commit
 __git_complete gb _git_checkout
 __git_complete ga _git_add
 __git_complete grb _git_rebase
+__git_complete gf _git_fetch
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
