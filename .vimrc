@@ -103,6 +103,7 @@ function! LightlineFilename()
 endfunction
 
 nnoremap <C-P> :GFiles<CR>
+nnoremap <C-A> :Buffer<CR>
 
 " Vim's auto indentation feature does not work properly with text copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
 nnoremap <F2> :set invpaste paste?<CR>
