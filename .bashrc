@@ -27,6 +27,9 @@ set -o noclobber
 
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 [ -f ~/.bash_git ] && source ~/.bash_git
+if command -v npm > /dev/null 2>&1; then
+  source <(npm completion)
+fi
 
 export FZF_DEFAULT_COMMAND="fd -H . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
