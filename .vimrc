@@ -92,6 +92,7 @@ syntax on
 " Don't show mode on bottom as lightline already shows it
 set noshowmode
 let g:lightline = {
+  \ 'colorscheme': 'solarized',
   \ 'component_function': {
   \ 'filename': 'LightlineFilename'
   \ }
@@ -113,6 +114,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+let g:solarized_termtrans = 1
+" To fix solarized light
+"let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
