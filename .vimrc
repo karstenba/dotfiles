@@ -55,15 +55,19 @@ call plug#end()
 filetype plugin on
 
 " ALE settings
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 let g:ale_linters_explicit = 1
 let g:ale_python_pylint_options = '--rcfile ~/.pylintrc'
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
+  \ 'typescript': ['eslint'],
+  \ 'javascriptreact': ['eslint'],
   \ 'python': ['pylint']
   \ }
 let g:ale_fixers = {
   \ 'javascript': ['prettier', 'eslint'],
+  \ 'typescript': ['prettier', 'eslint'],
+  \ 'javascriptreact': ['prettier', 'eslint'],
   \ 'python': ['autopep8', 'black']
   \ }
 
