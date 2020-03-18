@@ -86,8 +86,6 @@ set ts=2
 set sts=0
 set et
 
-syntax on
-
 " Lightline config
 " Don't show mode on bottom as lightline already shows it
 set noshowmode
@@ -115,9 +113,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:solarized_termtrans = 1
-" To fix solarized light
-"let g:solarized_termcolors=256
+syntax enable
 set background=dark
 colorscheme solarized
 
