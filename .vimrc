@@ -58,6 +58,7 @@ filetype plugin on
 let g:ale_fix_on_save = 0
 let g:ale_linters_explicit = 1
 let g:ale_python_pylint_options = '--rcfile ~/.pylintrc'
+let g:ale_javascript_eslint_options = ''
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
   \ 'typescript': ['eslint'],
@@ -70,6 +71,10 @@ let g:ale_fixers = {
   \ 'javascriptreact': ['prettier', 'eslint'],
   \ 'python': ['autopep8', 'black']
   \ }
+
+" Disable fixers for any file containing 'foo' in its path.
+" let g:ale_pattern_options = {'foo': {'ale_fixers': []}
+let g:ale_pattern_options = {'hpnv2-backend': {'ale_fixers': []}}
 
 " Don't show docs while autocompleting
 set completeopt-=preview
