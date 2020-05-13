@@ -25,12 +25,6 @@ alias glog='git log --oneline'
 alias gf='git fetch'
 alias gp='git push'
 
-alias vpn-us='sudo openvpn ~/vpn/mullvad_us.conf'
-alias vpn-hu='sudo openvpn ~/vpn/mullvad_hu.conf'
-alias vpn-de='sudo openvpn ~/vpn/mullvad_de.conf'
-alias vpn-gb='sudo openvpn ~/vpn/mullvad_gb.conf'
-alias vpn-it='sudo openvpn ~/vpn/mullvad_it.conf'
-
 alias screen-hdmi='xrandr --output HDMI1 --auto --primary && xrandr --output eDP1 --off'
 alias screen-dp='xrandr --output DP1-1 --auto --primary && xrandr --output eDP1 --off'
 alias screen-int='xrandr --output eDP1 --auto --primary && xrandr --output HDMI1 --off && xrandr --output DP1-1 --off'
